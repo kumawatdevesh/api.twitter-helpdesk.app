@@ -1,0 +1,12 @@
+{
+    "env": {
+        "DB_USER": "kumawatdevesn99",
+        "DB_PASSWORD": "kumawatdevesn99",
+        "DB_NAME": "helpdesk",
+        "CONSUMER_KEY": "GOeke9UqbAzWwnFAoC79ZuDMT",
+        "CONSUMER_SECRET": "sxUJWFIwceYOlvjWjKB3CAOthhlQPLjJf5hr6orKWzDULg5KQ7",
+        "ACCESS_TOKEN": "834368604778921984-mjWeWPDwAwM6mWdOh9fOc5U81fhmfg1",
+        "ACCESS_TOKEN_SECRET": "Zrv34kXSvUbe2U712JJKxXSA5suOlh3RBn7DqgEAva2ro",
+        "JWT_KEY": "secret_key"
+    }
+}

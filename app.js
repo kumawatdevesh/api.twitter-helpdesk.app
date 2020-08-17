@@ -21,7 +21,7 @@ app.use(cors());
 app.use('/api/users', userRouter);
 app.use('/api/tweets', tweetRouter);
 
-mongoose.connect('mongodb+srv://kumawatdevesn99:kumawatdevesn99@cluster0-tpp9z.mongodb.net/helpdesk?retryWrites=true&w=majority')
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0-tpp9z.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
 .then(res => {
     app.listen(5000);
     console.log('connected');

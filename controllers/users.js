@@ -13,7 +13,7 @@ exports.loginUser = async (req, res, next) => {
     }
     try {
       if(user) {
-        const token = await jwt.sign({user: user}, 'secret_key');
+        const token = await jwt.sign({user: user}, `${process.env.JWT_KEY}`);
         res.json({token: token, user: user});
       }
     } catch(e) {

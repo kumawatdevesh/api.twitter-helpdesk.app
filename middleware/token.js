@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
         if(!token) {
             throw new Error('no token');
         }
-        jwt.verify(token, 'secret_key');
+        jwt.verify(token, `${process.env.JWT_KEY}`);
         next();
     }catch(e) {
         throw e;
