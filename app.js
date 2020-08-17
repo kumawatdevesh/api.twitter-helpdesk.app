@@ -16,7 +16,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(cors());
+// app.use(cors());
 
 app.use('/api/users', userRouter);
 app.use('/api/tweets', tweetRouter);
