@@ -16,10 +16,10 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.use(cors());
+app.use(cors());
 
-app.use('/api/users', userRouter);
 app.use('/api/tweets', tweetRouter);
+app.use('/api/users', userRouter);
 
 mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0-tpp9z.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
 .then(res => {
@@ -27,5 +27,5 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD
 })
 .catch(err => {
     console.log(err);
-})
+});
 

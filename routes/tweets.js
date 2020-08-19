@@ -5,7 +5,9 @@ const authToken = require('../middleware/token');
 
 router.use(authToken);
 
-router.get('/get-tweets', tweetController.getTweets);
+router.get('/get-tweets/:username', tweetController.getTweets);
+
+router.get('/get-replies/:id/:username', tweetController.getReplies);
 
 router.post('/post-tweets', tweetController.postTweets);
 

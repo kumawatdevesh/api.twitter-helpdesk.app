@@ -2,7 +2,20 @@ const jwt = require('jsonwebtoken');
 
 module.exports = (req, res, next) => {
     try {
-        const token = req.headers.authorization.split(' ')[1];
+
+        if (typeof req.headers.authorization !== 'string') {
+            res.sendStatus(400);
+            return;
+        }
+        
+        const tokens = req.headers.authorization.split(' ');
+        
+        if (tokens.length < 2) {
+            res.sendStatus(400);
+            return;
+        }
+        const token = tokens[1];
+
         if(!token) {
             throw new Error('no token');
         }
