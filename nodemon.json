@@ -3,10 +3,10 @@
         "DB_USER": "kumawatdevesn99",
         "DB_PASSWORD": "kumawatdevesn99",
         "DB_NAME": "helpdesk",
-        "CONSUMER_KEY": "246Qu0HLbovTb4bzuuoHJWKeP",
-        "CONSUMER_SECRET": "ENhyogCAK6XZGpFvwgpbOHpikfmLYgWyZG9w7QBxm1KwQok9TP",
-        "ACCESS_TOKEN": "834368604778921984-fAyq9J9gKZjQDQS5tvIodNkX8xV8sCX",
-        "ACCESS_TOKEN_SECRET": "Ej4M7NW2f6KsDNrrr8mBtYfxuuqHQYZveAZAoHz5PLbwj",
+        "CONSUMER_KEY": "afcCKLWpote2lW3KlMIlipXoG",
+        "CONSUMER_SECRET": "BkFVEvdeVrzYZBBPRnoUmdG5Kbq9XEetYFs71rZeX9TyzKZsdg",
+        "ACCESS_TOKEN": "834368604778921984-Nh0NvQtHUZAhIaCRUKqgl9ZPm5WbhsR",
+        "ACCESS_TOKEN_SECRET": "SZgI0KLQNUExXMCWS9jKFMDTDXCjWiNEfg9tGomHizt5H",
         "JWT_KEY": "secret_key"
     }
 }
